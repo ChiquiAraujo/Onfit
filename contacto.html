@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./style.css">
-    <title>On Fit | Contacto</title>
+    <title> On Fit Contacto</title>
 </head>
 <body>
     <header class="header">
-        <a class="header__logo" href="./index.html"><img  src="./img/logoblanco.png" alt="logo"></a>
-        <nav class="nav_list">
-            <ul class="ul__list">
-                <li> <a class="li__a" href="./quienessomos.html">Quienes Somos</a></li>
-                <li> <a class="li__a" href="./producto.html">Productos</a></li>
-                <li> <a class="li__a" href="./contacto.html">Contacto</a> </li>
-                <li> <a class="li__a" id="loging" href="./login.html">Iniciar Sesión</a> </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg nav__color">
+            <div class="container-fluid">
+             <a class="navbar-brand" href="./index.html"><img src="./img/logoblanco.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="./quienessomos.html">Quienes Somos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./producto.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="loging" href="./login.html">Inicia Sesión</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
     </header>
     
     <main class="main__contacto">
@@ -27,38 +46,90 @@
         <p>Rellena tus datos personales, indica tu comentario, sugerencia o pregunta y nuestro equipo de atención al cliente de contestará a la mayor brevedad posible.</p>  
     </div>
    
+    <div class="container">
 
-    <section class="section__form" >
-   
-    <form action="formulario">
-        <fieldset class="fieldset__formulario">
-            <label for="nombre"></label>
-                <input type="text" name="nombre" placeholder="Nombre">
-            <label for="Numero de movil"></label>
-                <input id="movil" type="text" name="numero de movil" placeholder="Número de móvil">
-            <br>
-            <label for="email"></label>
-                <input type="email" name="email" placeholder="Email">
-            <label for="mensaje"></label>
-                <br>
-                <textarea name="mensaje" cols="40" rows="5" placeholder="Mensaje"></textarea>
-            <br>
-            <label for="terminosycondiciones"> 
-                <p>He leído, entiendo y acepto los <a href="https://docs.google.com/document/d/1ubPGkpPjRuvyyWWnvhtx0KVb9_gctBgY5M_Dnf3OEp4/edit"> términos y condiciones
-                </a> de la protección de datos. </p>
-                </label>
-                <div>
-                    <input id="acepto" type="radio" required> Acepto
-                </div>
-                <input id="enviar" type="submit">
-        </fieldset>
-    </form>
+        <div class="row">
+    
+          <div class="col">
+            <form action="formulario">
+                <fieldset class="fieldset__formulario">
+                    <label for="nombre"></label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    <label for="Numero de movil"></label>
+                        <input id="movil" type="text" name="numero de movil" placeholder="Número de móvil">
+                    <br>
+                    <label for="email"></label>
+                        <input type="email" name="email" placeholder="Email">
+                    <label for="mensaje"></label>
+                        <br>
+                        <textarea name="mensaje" cols="40" rows="5" placeholder="Mensaje"></textarea>
+                    <br>
+                    <label for="terminosycondiciones"> 
+                        <p>He leído, entiendo y acepto los <a href="https://docs.google.com/document/d/1ubPGkpPjRuvyyWWnvhtx0KVb9_gctBgY5M_Dnf3OEp4/edit"> términos y condiciones
+                        </a> de la protección de datos. </p>
+                        </label>
+                        <div>
+                            <input id="acepto" type="radio" required> Acepto
+                        </div>
+                        <input id="enviar" type="submit">
+                </fieldset>
+            </form>
+          </div>
+    
+          <div class="col">
+            <div class="div__terminos">
+                
+                <p>
+                    Protección de datos <br><br>
+                    
+                    ONFIT, S.L. es el responsable del tratamiento de los datos personales del usuario y le informa que estos datos serán tratados de conformidad con lo dispuesto en el Reglamento (UE) 2016/679 de 27 de abril de 2016 (GDPR), por lo que se le facilita la siguiente información del tratamiento:
+                    Protección de datos personales: Utilizaremos sus datos para responder consultas, realizar acciones comerciales ya análisis estadísticos.
+                    Para más información sobre el tratamiento y sus derechos, consulte la política de privacidad.
+                    <br>
+                    <br>               
 
-    <div class="div__terminos">
-        <h4>Protección de datos</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veritatis ipsum laborum accusamus quisquam, delectus sequi natus suscipit sed, obcaecati sapiente expedita nihil, labore provident eius! Ad! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam sint blanditiis nam, nulla molestiae velit deleniti sed, eius eveniet possimus quas autem. Aspernatur tempore molestiae, ea voluptatum asperiores recusandae dolores! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum aperiam dicta natus vitae sequi quam quasi magni earum nulla blanditiis iure illum veniam nobis ullam sapiente, soluta, dolores quo et?</p>
-    </div>
-</section>
+                    Fin del tratamiento: Facilitar la entrada como invitado/a; envío de información comercial por teléfono y medios electrónicos, realizar encuestas de satisfacción y elaborar perfiles comerciales.
+                    Criterios de conservación de los datos: serán conservados y tratados hasta que el propio usuario titular de los datos solicite su cancelación o manifieste su oposición al tratamiento de datos con tales fines, en tal caso los datos se suprimirán con medidas de seguridad adecuadas para garantizar la seudonimización de los datos o la destrucción total de los mismos.
+                    <br><br>
+                    Comunicación de los datos: Se comunicarán los datos al titular del centro Onfit elegido en el formulario para su tratamiento con las mismas finalidades.
+                    Derechos que asisten: Derecho a retirar el consentimiento en cualquier momento. Derecho de acceso, rectificación, portabilidad y supresión de sus datos y a la limitación u oposición al su tratamiento. Derecho a presentar una reclamación ante la Autoridad de control (agpd.es) si considera que el tratamiento no se ajusta a la normativa vigente.
+                    Datos de contacto para ejercer sus derechos: ONFIT GRUPO DE GESTION, S.L.
+                    <br><br>
+                    Contacto del delegado de Protección de datos:  rgpd@onfit.es
+                    </p>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     
     <section class="section__div--info">
@@ -118,6 +189,6 @@
         </div>
 
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
 </body>
 </html>
