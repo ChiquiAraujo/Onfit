@@ -89,7 +89,7 @@
 /*--------------------------- Home ---------------------------*/
 
 .section__principal {
-    background-image: url(../img/Home/yogahome.jpg);
+    background-image: url(../img/inicio/yogahome.jpg);
     background-color: rgb(190, 181, 181); 
     height: 70rem;
     background-position: center;
@@ -610,7 +610,7 @@ width: 100%;
     /*------------------------ Movil Home ------------------------*/
 
     .section__principal {
-        background-image: url(../img/home/yogahomemediana.png);
+        background-image: url(../img/inicio/yogahomemediana.png);
         background-position: center;
         background-size:cover;
         height: 35rem;
@@ -797,7 +797,7 @@ width: 100%;
 /*------------------------ Tablet Home ------------------------*/
 
 .section__principal {
-    background-image: url(../img/home/yogahomemediana.png);
+    background-image: url(../img/inicio/yogahomemediana.png);
     background-position: center;
     background-size:cover;
     height: 35rem;
