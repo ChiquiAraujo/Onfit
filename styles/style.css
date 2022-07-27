@@ -175,7 +175,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 1rem; }
-  .area3 h3 {
+  .area3 h2 {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -222,7 +222,7 @@
 .section__productos img {
   width: 100%; }
 
-.section__h3--producto {
+.section__h2--producto {
   background-color: #5A1647;
   color: white;
   text-align: center;
