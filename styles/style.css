@@ -59,7 +59,7 @@
   background-size: cover;
   /* background-attachment: fixed; */
   color: white;
-  padding: 18rem 10rem; }
+  padding: 18rem 5rem; }
   .section__principal button {
     border: none;
     padding: 1rem;
@@ -380,6 +380,10 @@
     width: 100%; }
 
 /*-------------------------- Inicia Sesión --------------------------*/
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 30px; } }
+
 @media (max-width: 500px) {
   /*------------------------ Movil Header ------------------------*/
   .header {

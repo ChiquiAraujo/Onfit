@@ -85,7 +85,7 @@
     background-size:cover;
     /* background-attachment: fixed; */
     color: white;
-    padding: 18rem 10rem ;    
+    padding: 18rem 5rem ;    
 
     button {
         border: none;
@@ -509,7 +509,11 @@ color: white;
 
 
 
-
+@media (max-width: 1200px ) {
+    h1 {
+        font-size: 30px;
+    }
+}
 
 
 @media (max-width: 500px ) {
