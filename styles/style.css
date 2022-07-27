@@ -106,10 +106,10 @@
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    border-radius: 20px; }
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.155); }
   .section__img--entrenadoras img:hover {
-    height: 240px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.194); }
+    box-shadow: 5px 5px 5px #5A1647; }
 
 .section__h3--nuestroequipo {
   background-color: #5A1647;
