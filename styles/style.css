@@ -10,6 +10,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-family: Verdana, Geneva, Tahoma, sans-serif; }
 
+/*--------------------------- SASS 2---------------------------*/
 /*--------------------------- Header ---------------------------*/
 .header {
   background-color: #5A1647;
@@ -33,6 +34,7 @@
   background-color: #5A1647;
   display: flex;
   justify-content: space-around;
+  align-content: none;
   align-items: center;
   padding: 1rem; }
   .footer .footer__logo img {
@@ -44,7 +46,7 @@
 .div__a--footer {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  text-align: center; }
   .div__a--footer a {
     text-decoration: none;
     color: white;
@@ -85,12 +87,13 @@
     color: #ffc300; }
 
 .section__div--align {
-  color: #5A1647;
-  align-items: center;
   display: grid;
+  justify-content: center;
+  align-content: none;
+  align-items: none;
+  color: #5A1647;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  justify-content: center;
   text-align: center;
   gap: 1rem;
   padding: 1rem; }
@@ -118,10 +121,6 @@
   line-height: 2rem;
   padding: 2rem;
   font-size: 1.5rem; }
-
-.div__carousel {
-  width: 400px;
-  height: 200px; }
 
 /*Nuestro equipo*/
 /*APP*/
@@ -170,24 +169,25 @@
   grid-column: 1/4; }
 
 .area3 {
-  grid-column: 4/7;
-  grid-row: 1/2;
   display: flex;
   flex-direction: column;
+  grid-column: 4/7;
+  grid-row: 1/2;
   justify-content: center;
   padding: 1rem; }
   .area3 h2 {
     text-align: center;
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    font-size: 18px; }
 
 .area4 {
+  display: flex;
+  flex-direction: column;
   grid-column: 1/3;
   color: #5A1647;
   height: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   text-align: center; }
   .area4 div {
@@ -196,17 +196,18 @@
     padding: 0.5rem; }
 
 .area5 {
-  grid-column: 3/5;
-  color: #5A1647;
   display: flex;
   flex-direction: column;
+  grid-column: 3/5;
+  color: #5A1647;
   justify-content: center; }
   .area5 div {
     display: flex;
+    justify-content: center;
+    align-content: none;
     align-items: center;
     margin: 1rem;
-    font-size: small;
-    justify-content: center; }
+    font-size: small; }
   .area5 img {
     width: 35px;
     margin: 0.5rem; }
@@ -239,10 +240,11 @@
   margin: 2rem;
   padding: 1.5rem;
   border-radius: 20px;
-  display: grid;
-  align-content: space-between;
   flex-direction: column;
-  justify-content: left; }
+  display: grid;
+  justify-content: left;
+  align-content: space-between;
+  align-items: none; }
   .box__productos img {
     width: 50px;
     margin-bottom: 1r; }
@@ -269,7 +271,8 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem; }
   .gallery img {
-    width: 100%; }
+    width: 100%;
+    background-color: #f1f1f1; }
   .gallery img:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.194); }
 
@@ -294,9 +297,9 @@
   grid-template-columns: repeat(2, 1fr); }
 
 .fieldset__formulario {
-  border: none;
   display: flex;
   flex-direction: column;
+  border: none;
   padding: 1rem; }
   .fieldset__formulario input {
     background-color: #f1f1f1;
@@ -336,15 +339,30 @@
   padding: 1rem;
   margin-top: 1rem;
   /* align-items: center; */ }
+  .div__terminos h2 {
+    font-size: 18px; }
 
 /*info*/
 .section__div--info {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 1.5rem; }
+  .section__div--info h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5A1647; }
+  .section__div--info p {
+    font-size: 12px;
+    color: #827A7A; }
+  .section__div--info img {
+    width: 35px;
+    margin-right: 20px; }
+
+.div__img--flex {
   display: flex;
   align-items: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  text-align: center;
-  margin: 1rem; }
+  margin-right: 1rem; }
 
 /* Mapa */
 .iframe__mapa {
@@ -402,9 +420,9 @@
   /*------------------------ Movil Header ------------------------*/
   /*------------------------ Movil Footer ------------------------*/
   .footer {
-    background-color: #5A1647;
     display: flex;
     flex-direction: column;
+    background-color: #5A1647;
     font-size: 12px; }
   .footer__logo {
     border: 100px; }
@@ -497,8 +515,8 @@
   .header {
     background-color: #5A1647;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding: 1rem; }
   .ul__list {
     display: flex;
@@ -511,9 +529,9 @@
   /*------------------------ Tablet Footer ------------------------*/
   .footer {
     background-color: #5A1647;
+    font-size: 16px;
     display: flex;
-    flex-direction: column;
-    font-size: 16px; }
+    flex-direction: column; }
   .footer__logo {
     border: 100px; }
   .div__a--footer {
