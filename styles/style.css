@@ -28,6 +28,10 @@
 .header__logo {
   width: 150px; }
 
+.navbar-toggler {
+  color: #5A1647;
+  background-color: #f1f1f1; }
+
 /*--------------------------- Header ---------------------------*/
 /*--------------------------- Footer ---------------------------*/
 .footer {
@@ -42,6 +46,9 @@
     padding: 0.5rem; }
   .footer .div__footer--rrss a {
     padding: 0.2rem; }
+
+.a__img--rrss {
+  width: 30px; }
 
 .div__a--footer {
   display: flex;

@@ -40,6 +40,10 @@
 .header__logo {
     width: 150px;
 }
+.navbar-toggler {
+    color: $color1;
+    background-color: #f1f1f1;
+}
 
 /*--------------------------- Header ---------------------------*/
 
@@ -56,10 +60,12 @@
 }
 
 .div__footer--rrss a{
-    padding: 0.2rem;   
+    padding: 0.2rem;
     }    
 }
-
+.a__img--rrss{
+    width: 30px;
+}
 .div__a--footer {
     @include flex-direction (flex, column);
     text-align: center;
