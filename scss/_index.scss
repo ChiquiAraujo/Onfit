@@ -1,0 +1,125 @@
+/*--------------------------- Home ---------------------------*/
+
+.section__principal {
+    background-image: url(../img/inicio/yogahome.jpg);
+    background-color: rgb(190, 181, 181); 
+    height: 70rem;
+    background-position: center;
+    background-size:cover;
+    color: white;
+    padding: 18rem 10rem ;    
+
+    button {
+        border: none;
+        padding: $spacing-medium;
+        border-radius: 5px;
+        color: white;
+        background-color: $color2;
+        font-weight: bold;
+        font-size: medium;
+        margin-top: $spacing-large;
+}
+
+    button:hover {
+        border: solid rgba(90, 90, 90, 0.219);
+}
+}
+.section__barra1 {
+    background-color: $color1;
+    text-align: center;
+    color: white;
+    padding: 1.5rem;
+    line-height: 2rem;
+    a {
+    text-decoration: none;
+    color: white;
+    } 
+
+    a:hover {
+    color: #ffc300;
+    }
+}
+
+.section__div--align {  
+    @include flex (grid, center, none, none);
+    color: $color1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    img {
+        width: 75px;
+        margin: 1rem;
+    }
+}
+
+        /*Nuestro equipo*/
+
+.section__img--entrenadoras {
+    display: flex;
+    overflow: auto;
+    img {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 20px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.194);
+    }
+    img:hover {
+        box-shadow: 6px 6px 6px $color1;
+    }
+}
+
+.section__h3--nuestroequipo {
+    background-color: $color1;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    padding: 2rem;
+    font-size:1.5rem;
+}
+
+
+
+        /*Nuestro equipo*/
+
+        /*APP*/
+.section__app {
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;    
+    align-items: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.section__div--app {
+    text-align: center;
+    h3 {
+    padding: 1rem;
+    }
+
+    p {
+        padding: 2rem;
+    }
+
+    button {
+        border: none;
+        padding: 1rem;
+        border-radius: 5px;
+        color: white;
+        background-color: $color2;
+        font-weight: bold;
+        font-size: medium;
+        margin-top: 1rem;
+    }
+
+    button:hover {
+    border: solid rgba(90, 90, 90, 0.219);
+    }
+}
+
+/*--------------------------- Home ---------------------------*/

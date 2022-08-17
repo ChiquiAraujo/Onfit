@@ -1,0 +1,149 @@
+/*--------------------------- Productos ---------------------------*/
+
+.section__productos img {
+    width: 100%;
+    }
+    .section__h1--producto {
+        background-color: $color1;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        h1{
+            font-size: 25px;
+        }
+    }
+    
+    .section__div--productos {
+        background-color: #f8f8f8;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);    
+    }
+    
+    .box__productos {
+        background-color: white;
+        margin: 2rem;
+        padding: 1.5rem;
+        border-radius: 20px;    
+        flex-direction: column;
+    
+        @include flex (grid, left, space-between, none);
+        img{
+        width: 50px;
+        margin-bottom: 1r;
+        }
+        h4 {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            font-size:medium;
+        }
+        button {
+            background-color: $color2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            width: 7rem;
+            padding:0.5rem;
+    
+        }
+    }
+// tarjetas 
+
+.section__card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 5px; 
+          
+    div {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: larger;
+        color: white;
+        padding: 0.2rem;
+        border-radius: 15px;
+    }
+    p {
+        font-size: small;
+    }
+    button {
+        padding: 0.5rem;
+        font-size: small;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+.basico {
+    height: 300px;
+    width: 270px;
+   h2{
+   color:#046EC4 ;
+   } 
+   h3 {
+    background-color: #046EC4;
+   }
+   button {
+    background-color: #046EC4;
+   }
+}
+
+.premium {
+    height: 410px;
+    width: 270px;
+   h2{
+   color:#C40460;
+   } 
+   h3 {
+    background-color:#C40460;
+   }
+   button {
+    background-color:#C40460;
+   }
+}
+
+.medio {
+    height: 350px;
+    width: 270px;
+   h2{
+   color:#04C445;
+   } 
+   h3 {
+    background-color:#04C445;
+   }
+   button {
+    background-color:#04C445;
+   }
+}
+
+//Galeria
+
+
+    .gallery {
+        margin: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    
+        img {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        img:hover {
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.194);
+        }
+    }
+    
+    /*--------------------------- Productos ---------------------------*/

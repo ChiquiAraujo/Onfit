@@ -1,0 +1,120 @@
+/*---------------------------- Contacto ----------------------------*/
+
+.main__contacto {
+    background-image: url(../img/contacto/contacto.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.div__textoprincipal {
+    @include flex-direction (flex, column);
+   text-align: center;
+   padding: 2rem;
+    h1{
+        padding: 2rem;
+    }
+}
+
+.section__form {
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.fieldset__formulario {
+    @include flex-direction (flex, column);
+    border: none;    
+    padding: 1rem;
+    input {
+        background-color: #f1f1f1;
+        border: none;
+        margin: 2px;
+        padding: 0.75rem;
+        border-radius: 5px;
+    }
+    textarea{
+        background-color: #f1f1f1;
+        border: none;
+        padding: 0.75rem;
+        border-radius: 5px;
+    }
+
+    a{
+        text-decoration: none;
+        color: rgb(144, 161, 249);
+    }
+
+    a:hover {
+        color: $color2;
+    }
+}
+
+#movil {
+    margin-top: 1rem;
+}
+#enviar {
+    background-color: forestgreen;
+    color: white;
+    font-weight:bolder;
+    width: 100px;
+    margin-top: 1.5rem;
+}
+
+/* Protección de Datos */
+
+.div__terminos {
+    background-color: rgb(242, 242, 242);
+    overflow: auto;
+    height: 500px;
+    border-radius: 5px;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin-top: 1rem;
+    /* align-items: center; */
+
+    h2 {
+        font-size: $font-title;
+    }
+    
+}
+
+
+
+/*info*/
+.section__div--info {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.5rem;
+    justify-items: center;
+    h3 {
+        font-size: $font-minititle;
+        font-weight: bold;
+        color: $color1;
+    }
+    p {
+        font-size: 12px;
+        color: $color4;
+    }
+    img {
+        width: 35px;
+        margin-right: 20px;
+    }
+}
+.div__img--flex {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    
+}
+
+
+
+/* Mapa */
+.iframe__mapa {
+    width: 100%;
+}
+
+/*---------------------------- Contacto ----------------------------*/

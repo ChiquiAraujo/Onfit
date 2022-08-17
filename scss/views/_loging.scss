@@ -1,0 +1,64 @@
+/*-------------------------- Inicia Sesión --------------------------*/
+
+
+.bg {
+    background-color: rgb(255, 255, 255);
+    background-image: url(../img/loging/full.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.div__form--pad h1{
+    font-size:larger;
+}
+.section__fieldset--log button {
+    margin: 0.5rem;
+    background-color: #3198EB;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+}
+
+
+.div__button--registrate {
+background-color: #04C445;
+border-radius: 5px;
+    a {
+    text-decoration: none;
+    color: white;
+    }
+}
+.div__button--log {
+background-color: #3198EB;
+color: white;
+}
+.div__gallery2{
+background-color: $color4;
+margin-top: 1.5rem;
+color: white;
+h2 {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+p {
+    text-align: center;
+    margin: 1rem;
+    font-size: small;
+}
+}
+
+.gallery2 {
+    margin-top: 1.5rem;
+    display: flex;
+    overflow: auto;
+    img {
+       width: 3500px;
+       margin: 20px;
+       border-radius: 10px;
+
+    }  
+}
+
+
+/*-------------------------- Inicia Sesión --------------------------*/

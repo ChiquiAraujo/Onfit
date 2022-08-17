@@ -1,65 +1,6 @@
 @charset "UTF-8";
 /*colores*/
 /*font size*/
-*::after,
-*::before,
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-/*--------------------------- SASS 2---------------------------*/
-/*--------------------------- Header ---------------------------*/
-.header {
-  background-color: #5A1647;
-  padding: 1rem; }
-  .header .nav__color a {
-    color: white; }
-  .header .nav__color a:hover {
-    color: #a5a5a5; }
-
-#loging:hover {
-  background-color: #ffc300;
-  color: white;
-  border-radius: 5px; }
-
-.header__logo {
-  width: 150px; }
-
-.navbar-toggler {
-  color: #5A1647;
-  background-color: #f1f1f1; }
-
-/*--------------------------- Header ---------------------------*/
-/*--------------------------- Footer ---------------------------*/
-.footer {
-  background-color: #5A1647;
-  display: flex;
-  justify-content: space-around;
-  align-content: none;
-  align-items: center;
-  padding: 1rem; }
-  .footer .footer__logo img {
-    width: 150px;
-    padding: 0.5rem; }
-  .footer .div__footer--rrss a {
-    padding: 0.2rem; }
-
-.a__img--rrss {
-  width: 30px; }
-
-.div__a--footer {
-  display: flex;
-  flex-direction: column;
-  text-align: center; }
-  .div__a--footer a {
-    text-decoration: none;
-    color: white;
-    font-size: small; }
-
-/*--------------------------- Footer ---------------------------*/
 /*--------------------------- Home ---------------------------*/
 .section__principal {
   background-image: url(../img/inicio/yogahome.jpg);
@@ -74,7 +15,7 @@
     padding: 1rem;
     border-radius: 5px;
     color: white;
-    background-color: #ff5733;
+    background-color: #F6590E;
     font-weight: bold;
     font-size: medium;
     margin-top: 2rem; }
@@ -150,7 +91,7 @@
     padding: 1rem;
     border-radius: 5px;
     color: white;
-    background-color: #ff5733;
+    background-color: #F6590E;
     font-weight: bold;
     font-size: medium;
     margin-top: 1rem; }
@@ -158,6 +99,121 @@
     border: solid rgba(90, 90, 90, 0.219); }
 
 /*--------------------------- Home ---------------------------*/
+/*--------------------------- Productos ---------------------------*/
+.section__productos img {
+  width: 100%; }
+
+.section__h1--producto {
+  background-color: #5A1647;
+  color: white;
+  text-align: center;
+  padding: 2rem; }
+  .section__h1--producto h1 {
+    font-size: 25px; }
+
+.section__div--productos {
+  background-color: #f8f8f8;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+.box__productos {
+  background-color: white;
+  margin: 2rem;
+  padding: 1.5rem;
+  border-radius: 20px;
+  flex-direction: column;
+  display: grid;
+  justify-content: left;
+  align-content: space-between;
+  align-items: none; }
+  .box__productos img {
+    width: 50px;
+    margin-bottom: 1r; }
+  .box__productos h4 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: medium; }
+  .box__productos button {
+    background-color: #F6590E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 7rem;
+    padding: 0.5rem; }
+
+.section__card {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 5px; }
+  .section__card div {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem; }
+  .section__card h2 {
+    font-size: 25px; }
+  .section__card h3 {
+    font-size: larger;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 15px; }
+  .section__card p {
+    font-size: small; }
+  .section__card button {
+    padding: 0.5rem;
+    font-size: small;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    color: white; }
+
+.basico {
+  height: 300px;
+  width: 270px; }
+  .basico h2 {
+    color: #046EC4; }
+  .basico h3 {
+    background-color: #046EC4; }
+  .basico button {
+    background-color: #046EC4; }
+
+.premium {
+  height: 410px;
+  width: 270px; }
+  .premium h2 {
+    color: #C40460; }
+  .premium h3 {
+    background-color: #C40460; }
+  .premium button {
+    background-color: #C40460; }
+
+.medio {
+  height: 350px;
+  width: 270px; }
+  .medio h2 {
+    color: #04C445; }
+  .medio h3 {
+    background-color: #04C445; }
+  .medio button {
+    background-color: #04C445; }
+
+.gallery {
+  margin: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; }
+  .gallery img {
+    width: 100%;
+    background-color: #f1f1f1; }
+  .gallery img:hover {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.194); }
+
+/*--------------------------- Productos ---------------------------*/
 /*--------------------------- Quienes Somos ---------------------------*/
 .area1 img {
   width: 100%; }
@@ -221,71 +277,12 @@
 
 .area6 {
   grid-column: 5/7;
-  background-image: url(../img/quienessomos/entrenadora.jpg);
+  background-image: url(../img/quienessomos/coach.jpg);
   background-position: center;
   background-size: cover;
   z-index: 1; }
 
 /*--------------------------- Quienes Somos ---------------------------*/
-/*--------------------------- Productos ---------------------------*/
-.section__productos img {
-  width: 100%; }
-
-.section__h1--producto {
-  background-color: #5A1647;
-  color: white;
-  text-align: center;
-  padding: 2rem; }
-  .section__h1--producto h1 {
-    font-size: 25px; }
-
-.section__div--productos {
-  background-color: #f8f8f8;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-
-.box__productos {
-  background-color: white;
-  margin: 2rem;
-  padding: 1.5rem;
-  border-radius: 20px;
-  flex-direction: column;
-  display: grid;
-  justify-content: left;
-  align-content: space-between;
-  align-items: none; }
-  .box__productos img {
-    width: 50px;
-    margin-bottom: 1r; }
-  .box__productos h4 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    font-weight: bold;
-    font-size: medium; }
-  .box__productos button {
-    background-color: #ff5733;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.171);
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    width: 7rem;
-    padding: 0.5rem; }
-
-.gallery {
-  margin: 0.5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem; }
-  .gallery img {
-    width: 100%;
-    background-color: #f1f1f1; }
-  .gallery img:hover {
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.194); }
-
-/*--------------------------- Productos ---------------------------*/
 /*---------------------------- Contacto ----------------------------*/
 .main__contacto {
   background-image: url(../img/contacto/contacto.png);
@@ -325,7 +322,7 @@
     text-decoration: none;
     color: #90a1f9; }
   .fieldset__formulario a:hover {
-    color: #ff5733; }
+    color: #F6590E; }
 
 #movil {
   margin-top: 1rem; }
@@ -356,7 +353,8 @@
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
-  margin: 1.5rem; }
+  margin: 1.5rem;
+  justify-items: center; }
   .section__div--info h3 {
     font-size: 16px;
     font-weight: bold;
@@ -381,7 +379,7 @@
 /*-------------------------- Inicia Sesión --------------------------*/
 .bg {
   background-color: white;
-  background-image: url(../img/loging/full-shot-woman-sitting-on-yoga-mat.jpg);
+  background-image: url(../img/loging/full.jpg);
   background-position: center;
   background-size: cover; }
 
@@ -407,20 +405,21 @@
   color: white; }
 
 .div__gallery2 {
-  background-color: #ffc300;
+  background-color: #827A7A;
   margin-top: 1.5rem;
-  color: #827A7A; }
+  color: white; }
   .div__gallery2 h2 {
     font-size: large;
+    font-weight: bold;
     text-align: center;
-    padding-top: 1rem; }
+    padding-top: 1.5rem; }
   .div__gallery2 p {
     text-align: center;
     margin: 1rem;
     font-size: small; }
 
 .gallery2 {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   display: flex;
   overflow: auto; }
   .gallery2 img {
@@ -454,7 +453,7 @@
   .footer__logo {
     border: 100px; }
     .footer__logo img {
-      width: px; }
+      width: 20px; }
   .div__a--footer {
     margin-top: 0.5rem; }
   .div__footer--rrss {
@@ -534,7 +533,7 @@
     padding: 1rem !important; }
   /*-----------------------Movil Inicia Sesión -----------------------*/ }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
   /*------------------------ tablet Header ------------------------*/
   .header {
     background-color: #5A1647;
@@ -632,3 +631,63 @@
   /*------------------------ Tablet Contacto ------------------------*/
   /*-----------------------tablet Inicia Sesión -----------------------*/
   /*-----------------------tablet Inicia Sesión -----------------------*/ }
+
+*::after,
+*::before,
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+/*--------------------------- SASS 2---------------------------*/
+/*--------------------------- Header ---------------------------*/
+.header {
+  background-color: #5A1647;
+  padding: 1rem; }
+  .header .nav__color a {
+    color: white; }
+  .header .nav__color a:hover {
+    color: #a5a5a5; }
+
+#loging:hover {
+  background-color: #ffc300;
+  color: white;
+  border-radius: 5px; }
+
+.header__logo {
+  width: 150px; }
+
+.navbar-toggler {
+  color: #5A1647;
+  background-color: #f1f1f1; }
+
+/*--------------------------- Header ---------------------------*/
+/*--------------------------- Footer ---------------------------*/
+.footer {
+  background-color: #5A1647;
+  display: flex;
+  justify-content: space-around;
+  align-content: none;
+  align-items: center;
+  padding: 1rem; }
+  .footer .footer__logo img {
+    width: 150px;
+    padding: 0.5rem; }
+  .footer .div__footer--rrss a {
+    padding: 0.2rem; }
+
+.a__img--rrss {
+  width: 30px; }
+
+.div__a--footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center; }
+  .div__a--footer a {
+    text-decoration: none;
+    color: white;
+    font-size: small; }
+
+/*--------------------------- Footer ---------------------------*/
