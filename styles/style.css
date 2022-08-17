@@ -182,7 +182,7 @@
   grid-row: 1/2;
   justify-content: center;
   padding: 1rem; }
-  .area3 h2 {
+  .area3 h1 {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -231,11 +231,13 @@
 .section__productos img {
   width: 100%; }
 
-.section__h2--producto {
+.section__h1--producto {
   background-color: #5A1647;
   color: white;
   text-align: center;
   padding: 2rem; }
+  .section__h1--producto h1 {
+    font-size: 25px; }
 
 .section__div--productos {
   background-color: #f8f8f8;
@@ -296,7 +298,7 @@
   flex-direction: column;
   text-align: center;
   padding: 2rem; }
-  .div__textoprincipal h2 {
+  .div__textoprincipal h1 {
     padding: 2rem; }
 
 .section__form {
@@ -382,6 +384,9 @@
   background-image: url(../img/loging/full-shot-woman-sitting-on-yoga-mat.jpg);
   background-position: center;
   background-size: cover; }
+
+.div__form--pad h1 {
+  font-size: larger; }
 
 .section__fieldset--log button {
   margin: 0.5rem;
