@@ -6,7 +6,11 @@
 La intención de mi proyecto es que el usuario pueda contratar paquetes de nutrición y paquetes de actividad física.
 </p>
 
-<h2>  </h2>
+<h2> Visualización del Proyecto </h2>
+<img src="./img/20220817_133048.jpg">
+<img src="./img/Screenshot_20220817-133137_Chrome.jpg">
+
+
 
 <h3>STACK TECNOLÓGICO</h3>
     <ul> 
