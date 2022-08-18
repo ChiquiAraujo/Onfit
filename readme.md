@@ -7,7 +7,7 @@ La intención de mi proyecto es que el usuario pueda contratar paquetes de nutri
 </p>
 
 <h2> Visualización del Proyecto </h2>
-<img src="./img/pres.jpg">
+<img src="./img/pres.png">
 
 
 <h3>STACK TECNOLÓGICO</h3>
