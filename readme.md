@@ -1,5 +1,4 @@
 <h1> Onfit <h1>
-<p> Este es el repositorio para CoderHouse 37125 </p>
  
 <p>El proyecto ONFIT, está inspirado en el actual auge del mundo fitness virtual, que surgió durante la pandemia del 2020. Me pareció interesante hacer una propuesta, que permite al usuario realizar entrenamientos personalizados, tanto en casa como en el gym y a su vez presentar una alternativa para mejorar la nutrición.
 <br>
